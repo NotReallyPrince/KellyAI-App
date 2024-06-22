@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "StickerSmash",
-    "slug": "StickerSmash",
+    "name": "KellyAI",
+    "slug": "KellyAI",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "https://graph.org/file/ba2e3c1e2b3bc0461d546.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "https://graph.org/file/ba2e3c1e2b3bc0461d546.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -16,12 +16,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "https://graph.org/file/ba2e3c1e2b3bc0461d546.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.kellyai.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1ada9e99-22ba-4e7f-8064-c31d75e3592e"
+      }
     }
   }
 }
