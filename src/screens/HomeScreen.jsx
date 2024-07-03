@@ -8,7 +8,7 @@ const HomeScreen = () => {
   const { chatbot, setChatbot } = useContext(ChatbotContext);
 
   return (
-    <View className="flex-1 items-center mt-28">
+    <View className="flex-1 items-center mt-20">
       <Text className="text-4xl font-bold text-blue-500">Hello</Text>
       <View className="flex-row space-x-2">
         <Text className="text-2xl font-normal">Welcome to</Text>

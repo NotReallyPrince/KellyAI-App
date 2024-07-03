@@ -11,12 +11,12 @@ const Home = () => {
       <Stack.Screen
         name="home"
         component={HomeScreen}
-        options={{ headerShown: false }}
+        options={{ headerShown: false, statusBarColor: 'black' }}
       />
       <Stack.Screen
         name="chat"
         component={ChatScreen}
-        options={{ animation: "slide_from_bottom", headerShown: false }}
+        options={{ animation: "ios", statusBarColor: 'black', headerShown: false }}
       />
     </Stack.Navigator>
   );

@@ -32,6 +32,5 @@ export const getImageResponse = async (prompt, model) => {
     }
   );
   const data = response.data.image;
-  console.log(data)
   return data
 };
