@@ -229,18 +229,18 @@ export default function ChatScreen() {
       <>
         {text.length > 0 && (
           <Send {...props}>
-            <View className="mb-2">
+            <View className="mb-2 mx-[6px]">
               <View className="bg-gray-400 p-1 rounded-full">
-                <AntDesign name="arrowup" size={24} color="white" />
+                <AntDesign name="arrowup" size={28} color="white" />
               </View>
             </View>
           </Send>
         )}
         {text.length === 0 && (
           <TouchableOpacity onPress={() => clearChat()}>
-            <View className="mb-2">
+            <View className="mb-2 mx-2">
               <View className="bg-gray-400 p-1 rounded-full">
-                <MaterialIcons name="delete-outline" size={24} color="white" />
+                <MaterialIcons name="delete-outline" size={30} color="white" />
               </View>
             </View>
           </TouchableOpacity>
@@ -251,16 +251,11 @@ export default function ChatScreen() {
 
   return (
     <SafeAreaView>
-      <View className="w-full h-full">
-        <ImageBackground
-          source={{ uri: "https://graph.org/file/3c74f24ee42d73cff1bd4.jpg" }}
-          style={{ width: "100%", height: "100%" }}
-          resizeMode="cover"
-        >
-        <View className="flex-row justify-between items-center bg-transparent border-b-2 border-blue-400 blur-sm">
+      <View className="w-full h-full bg-gray-300">
+        <View className="flex-row justify-between items-center bg-gray-600 border-b-2 border-gray-500">
           <View className="h-14  flex-row items-center space-x-2 px-4">
             <Pressable onPress={() => navigation.goBack()}>
-              <AntDesign name="arrowleft" size={24} color="black" />
+              <AntDesign name="arrowleft" size={24} color="white" />
             </Pressable>
             <Image
               source={{
@@ -268,10 +263,10 @@ export default function ChatScreen() {
               }}
               className="w-8 h-8 rounded-full bg-gray-400"
             />
-            <Text className="text-lg font-bold">KellyAI</Text>
+            <Text className="text-lg font-bold text-white">KellyAI</Text>
           </View>
           <View className="mr-2">
-            <Entypo name="dots-three-vertical" size={24} color="black" />
+            <Entypo name="dots-three-vertical" size={24} color="white" />
             </View>
           </View>
           <GiftedChat
@@ -300,14 +295,14 @@ export default function ChatScreen() {
                 fontSize: 16,
                 minHeight: 45,
                 maxHeight: 120,
-                width: "88%",
-                margin: 3,
+                width: "85%",
+                marginLeft: 6,
+                marginVertical: 3
               },
             }}
             placeholder="Enter your Prompt"
             user={{ _id: 1 }}
           />
-        </ImageBackground>
       </View>
       <Modal
         visible={showImageModal}
